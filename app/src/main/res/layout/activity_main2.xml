@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/air_bg"
+    tools:context=".MainActivity2" >
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="725dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="387dp"
+                android:layout_height="259dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/layouts_bg">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/layouts_bg"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/air_quality_near_you"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="242dp"
+                    android:layout_height="69dp"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="71dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/air_quality"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/temperatureA2"
+                    android:layout_width="96dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="83dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Temp : 20C"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/humidityA2"
+                    android:layout_width="94dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="74dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Hum : 42%"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="432dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/layouts_bg">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="352dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/layouts_bg"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Air Quality in Popular Locations"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/HyderabadView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="82dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="@drawable/aqi3">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="110dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="135dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Hyderabad"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hyderabadAQVal"
+                        android:layout_width="116dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="128dp"
+                        android:layout_marginBottom="19dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="115"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginBottom="21dp"
+                        app:srcCompat="@drawable/air_pollution" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/DelhiView"
+                    android:layout_width="315dp"
+                    android:layout_height="92dp"
+                    android:layout_below="@+id/HyderabadView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/aqi5">
+
+                    <TextView
+                        android:id="@+id/delhiName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="130dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="New Delhi"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/delhiAQI"
+                        android:layout_width="116dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="117dp"
+                        android:layout_marginBottom="18dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="194"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginBottom="17dp"
+                        app:srcCompat="@drawable/air_pollution" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/MumbaiView"
+                    android:layout_width="315dp"
+                    android:layout_height="92dp"
+                    android:layout_below="@+id/DelhiView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="33dp"
+                    android:background="@drawable/aqi4">
+
+                    <TextView
+                        android:id="@+id/MumbaiName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="157dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Mumbai"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MumbaiAQI"
+                        android:layout_width="116dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="112dp"
+                        android:layout_marginBottom="14dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="130"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginBottom="16dp"
+                        app:srcCompat="@drawable/air_pollution" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
